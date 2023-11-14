@@ -74,17 +74,20 @@ $ git add.    # añadir todo lo que hay en el directorio actual
         - ...
 $ git commit -m "C1: prj-start"
                                     C1...
-        >--< >----------------------<|>--------              git:(master/main)
+        >--< >--------------------- {}--------              git:(master/main)
             - roadmap.excalidraw     1d4f8c3
             - roadmap.excalidraw
             - ...
 
->--< >----------------------<!>---------
-git  add readme.md
-git commit -m "C2: "upd readme.md"
-        C1                          C2....
-.... ---{}------------------------>---------------------- git:(master/main)
-    11d4f8c3                        - readme.md e5bab77
+        >--< >----------------------<!>---------
+$ git  add readme.md
+$ git commit -m "C2: "upd readme.md"
+              C1...
+       ... --- {}--------<>-----------              git:(master/main)
+            1d4f8c3     - readme.md
+
+        
+        
 ---------
 git add
 <!-- Servidores de linux ocupan una mayor demanda de mercado -->
