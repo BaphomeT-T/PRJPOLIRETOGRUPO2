@@ -8,7 +8,7 @@ public class App {
         int numTerminos;
         
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
-        System.out.println("Grupo: ...");
+        System.out.println("Grupo: ....");
         System.out.println("Integrantes: Julian Camacho, Juan Chanatasig, Andrea Chicaiza, Antony Cobos, Paul Davila, Edison Dueñas, Isabella Hernandez" );
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
 
