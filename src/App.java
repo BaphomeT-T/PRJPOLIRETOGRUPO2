@@ -4,6 +4,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         SerieNumerica10 oSerieNumerica10 = new SerieNumerica10();
+        SerieNumerica03 oSerieNumerica03 = new SerieNumerica03();
 
         int numTerminos;
         
@@ -27,6 +28,9 @@ public class App {
         System.out.println("Usando Recursividad:");
         oSerieNumerica10.showSerie10Recursividad(numTerminos,3);
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
-
+       
+        System.out.println("Serie 03: 0/1  1/3  1/5  2/7  3/9   5/11  8/13  13/15 ...");
+        System.out.println("Con el Ciclo for:");
+        oSerieNumerica03.showSerie03For(numTerminos);
     }
 }
