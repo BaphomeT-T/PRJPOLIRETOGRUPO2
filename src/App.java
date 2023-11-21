@@ -6,6 +6,7 @@ public class App {
         SerieNumerica10 oSerieNumerica10 = new SerieNumerica10();
         Ejercicio5 oEjercicio5 = new Ejercicio5();
         SerieNumerica03 oSerieNumerica03 = new SerieNumerica03();
+        SerieNumerica12 oSerieNumerica12= new SerieNumerica12();
 
         int numTerminos;
         
@@ -70,6 +71,15 @@ public class App {
         System.out.println("");
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("");
+
+        System.out.println("Serie 12: 2  6   12  20  30  42  56  72  ...");
+        System.out.println("Usando for");
+        oSerieNumerica12.showSerie12For(numTerminos);
+        System.out.println("Usando While");
+        oSerieNumerica12.showSerie12While(numTerminos);
+        System.out.println("Usando el DoWhile10");
+        oSerieNumerica12.showSerie12DoWhile(numTerminos);
 
     }
 }

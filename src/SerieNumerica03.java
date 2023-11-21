@@ -1,3 +1,8 @@
+/*
+ * Copyright (C) 2k23, JFranGar
+ * (...), jfchanatasig1405@gmail.com
+ * Version 1.0
+ */
 public class SerieNumerica03{
     /**
      * <b>showSerie03For</b> muestra la serie: 0/1  1/3  1/5  2/7  3/9   5/11  8/13  13/15 ... usando for.
