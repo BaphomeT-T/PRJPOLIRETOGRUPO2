@@ -48,7 +48,7 @@ public class App {
         oSerieNumerica6.showSerie6For(numTerminos);
         System.out.println("Usando While:");
         oSerieNumerica6.showSerie6While(numTerminos);
-        System.out.println("Usando Do While:");
+        System.out.println("Usando DoWhile:");
         oSerieNumerica6.showSerie6DoWhile(numTerminos);
         System.out.println("Usando Recursividad:");
         oSerieNumerica6.showSerie6Recursividad(1,numTerminos);
