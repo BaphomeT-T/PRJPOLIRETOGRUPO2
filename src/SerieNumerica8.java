@@ -20,11 +20,13 @@
      * @param termino : termino inicial.
      */
 
-    public void showserie8For (int numTerminos){
+    /*public void showserie8For (int numTerminos){
         int termino = 3;
         for (int i = 0; i < numTerminos; i++){
             System.out.print( (i<numTerminos-1) ? termino + ", " : termino);
-     * @param NumTerminos : numero de terminos. 
+        }
+    }*/
+     /* @param NumTerminos : numero de terminos. 
      * @param termino : termino inicial.
      */
 
@@ -48,12 +50,14 @@
         while(numTerminos > 0){
             System.out.print( (numTerminos!=1) ? termino + ", " : termino);
             termino = termino +5;
-            numTerminos--; 
+            numTerminos-- ; 
+        }
+    }
 
-     * @param NumTerminos : numero de terminos.
+     /* @param NumTerminos : numero de terminos.
      * @param termino : termino inicial.
      */
-    public void showserie8while (int NumTerminos){
+   /* public void showserie8while (int NumTerminos){
         int termino =3;
         while(NumTerminos > 0){
             System.out.print( (NumTerminos!=1) ? termino + ", " : termino);
@@ -62,7 +66,7 @@
 
         }
             System.out.println("");
-        }
+        }*/ 
 
     /**
      * Usando Do-While:
@@ -75,13 +79,13 @@
             System.out.print( (numTerminos!=1) ? termino + ", " : termino);
             termino = termino +5;
             numTerminos--; 
-        }
-        while(numTerminos != 0);
+        }while(numTerminos != 0);
+    }
 
-     * @param NumTerminos : numero de terminos.
+     /* @param NumTerminos : numero de terminos.
      * @param termino : termino inicial.
      */
-    public void showserie8dowhile (int NumTerminos){
+   /*  public void showserie8dowhile (int NumTerminos){
         int termino =3;
         do {
             System.out.print( (NumTerminos!=1) ? termino + ", " : termino);
@@ -90,6 +94,6 @@
         }
         while(NumTerminos != 0);
             System.out.println("");
-    }
+    }*/
   }
   

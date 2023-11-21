@@ -19,12 +19,13 @@ public class SerieNumerica9 {
      * @param termino : termino inicial.
      */
 
-     public void showserie9For (int numTerminos){
+     /*public void showserie9For (int numTerminos){
         int termino = 2;
         for (int i = 0; i < numTerminos; i++){
             System.out.print( (i<numTerminos-1) ? termino + ", " : termino);
+        }
+     }*/
 
-  public class SerieNumerica9 {
     /**
      * Usando For:
      * <b> showserie9For</b> muestra la serie: 2,4,8,16
@@ -32,7 +33,7 @@ public class SerieNumerica9 {
      * @param termino : termino inicial.
      */
 
-     public void showserie9For (int NumTerminos){
+      public void showserie9For (int NumTerminos){
         int termino = 2;
         for (int i = 0; i < NumTerminos; i++){
             System.out.print( (i<NumTerminos-1) ? termino + ", " : termino);
@@ -54,11 +55,13 @@ public class SerieNumerica9 {
             System.out.print( (numTerminos!=1) ? termino + ", " : termino);
             termino = termino *2;
             numTerminos--; 
+        }
+    }
 
-     * @param NumTerminos : numero de terminos.
+     /* @param NumTerminos : numero de terminos.
      * @param termino : termino inicial.
      */
-    public void showserie9while (int NumTerminos){
+    /*public void showserie9while (int NumTerminos){
         int termino =2;
         while(NumTerminos > 0){
             System.out.print( (NumTerminos!=1) ? termino + ", " : termino);
@@ -67,7 +70,7 @@ public class SerieNumerica9 {
 
         }
             System.out.println("");
-        }
+        }*/
 
     /**
      * Usando Do-While:
@@ -80,13 +83,14 @@ public class SerieNumerica9 {
             System.out.print( (numTerminos!=1) ? termino + ", " : termino);
             termino = termino *2;
             numTerminos--; 
-        }
-        while(numTerminos != 0);
+        }while(numTerminos != 0);
+    }
 
-     * @param NumTerminos : numero de terminos
+
+     /* @param NumTerminos : numero de terminos
      * @param termino : termino inicial.
      */
-    public void showserie9dowhile (int NumTerminos){
+    /*public void showserie9dowhile (int NumTerminos){
         int termino =2;
         do {
             System.out.print( (NumTerminos!=1) ? termino + ", " : termino);
@@ -95,5 +99,5 @@ public class SerieNumerica9 {
         }
         while(NumTerminos != 0);
             System.out.println("");
-    }
+    }*/
 }
