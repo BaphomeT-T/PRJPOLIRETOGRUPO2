@@ -82,9 +82,10 @@ $ git commit -m "C1: prj-start"
         >--< >----------------------<!>---------
 $ git  add readme.md
 $ git commit -m "C2: "upd readme.md"
-              C1...
-       ... --- {}--------<>-----------              git:(master/main)
-            1d4f8c3     - readme.md
+              C1...                    C2...
+       ... --- {}--------<>-----------{} ----              git:(master/main)
+            1d4f8c3      - readme.md   56b344d
+        
 
         
         
@@ -96,13 +97,22 @@ git add
 
 - gitbash 
 $ pwd (dir.actual) tab(autocompletar)
+$ clear           ctrl+l (limpiar terminal)
+$ cd ..           (volver dir.)     ctrl+a,e (editar nombre del fichero)
+$ ls              (listado  ficheros ) 
+$ ctrl+r (buscar)
+$ cat file.txt    (Mostrar contenido ) 
+$ rm file .text   (borra fichero) ctrl+z (salto de linea)
+$ cp file .text   (copiar) ctrl+v (pegar)
+$ mv file .text    (renonmbrar)
+$ touch file.text (crear fichero)
+
+--------------------------------------- texto aqui----------------------------------
 
 
-- gitbash
-clear           ctrl+l (limpiar terminal)
-cd ..           (volver dir.)     ctrl+a,e (editar nombre del fichero)
-ls              (listado  ficheros ) ctrl+r (buscar)
-cat file.txt    (Mostrar contenido ) 
-rm file .text   (borra fichero) ctrl+z (salto de linea)
-cp file .text 
 
+
+
+
+# Quinta clase
+## POO
