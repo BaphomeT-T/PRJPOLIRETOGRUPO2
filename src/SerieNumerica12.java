@@ -10,7 +10,7 @@ public class SerieNumerica12 {
     */
     public void showSerie12For(int numTerminos){
         for (int i = 1; i <= numTerminos; i++) {
-            System.out.println((i<numTerminos)?((i*i)+i)+",":(i*i)+i);
+            System.out.print((i<numTerminos)?((i*i)+i)+",":(i*i)+i);
         }
         System.out.println(" ");
     }
@@ -19,7 +19,7 @@ public class SerieNumerica12 {
         int i=0;
         while (i<numTerminos) {
             i++;
-            System.out.println((i<numTerminos)?((i*i)+i)+",":(i*i)+i);
+            System.out.print((i<numTerminos)?((i*i)+i)+",":(i*i)+i);
             
         }
         System.out.println("");
@@ -28,7 +28,7 @@ public class SerieNumerica12 {
     public void showSerie12DoWhile(int numTerminos){
         int i=1;
         do {
-           System.out.println((i<numTerminos)?((i*i)+i)+",":(i*i)+i);
+           System.out.print((i<numTerminos)?((i*i)+i)+",":(i*i)+i);
             i++;
         } while (i<numTerminos);
         System.out.println(" ");

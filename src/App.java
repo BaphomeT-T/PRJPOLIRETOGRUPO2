@@ -33,6 +33,23 @@ public class App {
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
         
         System.out.println("");
+        System.out.println("Serie 3: 0/1  1/3  1/5  2/7  3/9   5/11  8/13  13/15 ...");
+        System.out.println("");
+        System.out.println("Usando for:");
+        oSerieNumerica3.showSerie03For(numTerminos);
+        System.out.println("");
+        System.out.println("Usando While:");
+        oSerieNumerica3.showSerie03While(numTerminos);
+        System.out.println("");
+        System.out.println("Usando doWhile:");
+        oSerieNumerica3.showSerie03DoWhile(numTerminos);
+        System.out.println("");
+      
+        System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+        
+
+        System.out.println("");
         System.out.println("Serie 5: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, ...");
         System.out.println("");
         System.out.println("Usando for:");
@@ -47,8 +64,8 @@ public class App {
       
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
-        
         System.out.println("");
+
         System.out.println("Serie 6: 1, 4, 9, 16, 25, 36, 49, 64,....");
         System.out.println("");
         System.out.println("Usando for:");
