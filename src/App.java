@@ -4,6 +4,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         SerieNumerica10 oSerieNumerica10 = new SerieNumerica10();
+        Ejercicio5 oEjercicio5 = new Ejercicio5();
 
         int numTerminos;
         
@@ -15,6 +16,16 @@ public class App {
 
         System.out.println("Ingrese el número de veces que desea repetir las series");
         numTerminos = Integer.parseInt(sc.nextLine());
+
+        System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("Serie 5: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, ...");
+        System.out.println("Usando for:");
+        oEjercicio5.showSerie5For(numTerminos);
+        System.out.println("Usando While:");
+        oEjercicio5.showSerie5While(numTerminos);
+        System.out.println("Usando doWhile:");
+        oEjercicio5.showSerie5doWhile(numTerminos);
+        System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
 
         System.out.println("Serie 10: 3, 9, 27, 81, 243, 729, 2187, ...");
