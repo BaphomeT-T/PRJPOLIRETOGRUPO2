@@ -5,7 +5,7 @@
 
 /* Serie 5: 2, 3, 5, 7, 11, 13, 17, 19, 23 ... La serie es de numeros primos. */
 
-public class Ejercicio5 {
+public class SerieNumerica5 {
     /**
      * @param numTerminos Cantidad de numeros a generar.
     */
