@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-        Ejercicio5 oEjercicio5 = new Ejercicio5();
+    
         SerieNumerica6 oSerieNumerica6 = new SerieNumerica6();
         SerieNumerica7 oSerieNumerica7 = new SerieNumerica7();
         SerieNumerica8 oSerieNumerica8 = new SerieNumerica8();
