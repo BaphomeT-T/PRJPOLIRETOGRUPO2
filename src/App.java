@@ -12,7 +12,7 @@ public class App {
 
         int numTerminos;
         
-        System.out.println("---------------------------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.println("");
         System.out.println("Grupo: ...");
@@ -31,6 +31,7 @@ public class App {
         
         System.out.println("");
         System.out.println("Serie 5: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, ...");
+        System.out.println("");
         System.out.println("Usando for:");
         oEjercicio5.showSerie5For(numTerminos);
         System.out.println("");
@@ -46,6 +47,7 @@ public class App {
         
         System.out.println("");
         System.out.println("Serie 6: 1, 4, 9, 16, 25, 36, 49, 64,....");
+        System.out.println("");
         System.out.println("Usando for:");
         oSerieNumerica6.showSerie6For(numTerminos);
         System.out.println("Usando While:");
@@ -61,6 +63,7 @@ public class App {
 
         System.out.println("");
         System.out.println("Serie 7: 1, 4, 7, 10, 13, 16, 19, 22, 25,...");
+        System.out.println("");
         System.out.println("Usando for:");
         oSerieNumerica7.showSerie7For(numTerminos);
         System.out.println("Usando While:");
@@ -76,6 +79,7 @@ public class App {
 
         System.out.println("");
         System.out.println("Serie 8: 3, 8, 13, 18, 23, 28, 33, 38, ...");
+        System.out.println("");
         System.out.println("Método for:");
         oSerieNumerica8.showserie8For(numTerminos);
         System.out.println("");
@@ -108,6 +112,7 @@ public class App {
         System.out.println("");
 
         System.out.println("Serie 10: 3, 9, 27, 81, 243, 729, 2187, ...");
+        System.out.println("");
         System.out.println("Usando for:");
         oSerieNumerica10.showSerie10For(numTerminos);
         System.out.println("Usando While:");
