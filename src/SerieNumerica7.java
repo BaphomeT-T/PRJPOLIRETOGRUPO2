@@ -1,10 +1,10 @@
 /*
  * Copyright (C) 2k23, andrea-m11
  * (GRUPO2), andreachicaiza11@gmail.com
- * Version 1.0
+ * Version 2.0
  */
 
-public class Serie7 {
+public class SerieNumerica7 {
     /**
      * <b>showSerie7For</b> Muestra la serie: 1, 4, 7, 10, 13, 16, 19, 22, 25,... usando for.
      * @param numTerminos : cantidad de terminos a imprimir de la serie.

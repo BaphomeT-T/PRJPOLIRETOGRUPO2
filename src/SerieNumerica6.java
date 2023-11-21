@@ -1,10 +1,10 @@
 /*
  * Copyright (C) 2k23, andrea-m11
  * (GRUPO2), andreachicaiza11@gmail.com
- * Version 1.0
+ * Version 2.0
  */
 
-public class Serie6 {
+public class SerieNumerica6 {
     /**
      * <b>showSerie6For</b> Muestra la serie: 1, 4, 9, 16, 25, 36, 49, 64,.... usando for.
      * @param numTerminos : cantidad de terminos a imprimir de la serie.
