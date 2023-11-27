@@ -20,7 +20,7 @@ public class SerieNumerica1 {
      */
 
     public void ShowSerie1For(int numTerminos) {
-        System.out.print("->  ");
+        //System.out.print("->  ");
         int a = 1, b = 0, c = 0;
 
         for (int i = 0; i < numTerminos; i++) {
@@ -29,7 +29,7 @@ public class SerieNumerica1 {
             a = b;
             b = c;
         }
-        System.out.println("\n\n");
+        //System.out.println("\n\n");
     }
 
     /**
@@ -40,7 +40,7 @@ public class SerieNumerica1 {
      */
 
     public void ShowSerie1While(int numTerminos) {
-        System.out.print("->  ");
+        //System.out.print("->  ");
         int a = 1, b = 0, c = 0;
         int i = 0;
 
@@ -51,7 +51,7 @@ public class SerieNumerica1 {
             b = c;
             i++;
         }
-        System.out.println("\n\n");
+        //System.out.println("\n\n");
     }
 
     /**
@@ -61,7 +61,7 @@ public class SerieNumerica1 {
      * @param numTerminos : numero de terminos. 
      */
     public void ShowSerie1Dowhile(int numTerminos) {
-        System.out.print("->  ");
+        //System.out.print("->  ");
         int a = 1, b = 0, c = 0;
         int i = 0;
 
@@ -73,6 +73,6 @@ public class SerieNumerica1 {
             i++;
         } while (i < numTerminos);
 
-        System.out.println("\n\n");
+        //System.out.println("\n\n");
     }
 }

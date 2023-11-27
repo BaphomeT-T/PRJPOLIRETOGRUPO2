@@ -3,7 +3,9 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-
+        
+        SerieNumerica1 oSerieNumerica1 = new SerieNumerica1();
+        SerieNumerica2 oSerieNumerica2 = new SerieNumerica2();
         SerieNumerica3 oSerieNumerica3 = new SerieNumerica3();
         SerieNumerica5 oSerieNumerica5 = new SerieNumerica5();
         SerieNumerica6 oSerieNumerica6 = new SerieNumerica6();
@@ -28,6 +30,38 @@ public class App {
         System.out.println("Ingrese el número de veces que desea repetir las series");
         numTerminos = Integer.parseInt(sc.nextLine());
          System.out.println("");
+         
+System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+        
+        System.out.println("");
+        System.out.println("Serie 1: 0 1 1 2 3 5 8 13 ...");
+        System.out.println("");
+        System.out.println("Usando for:");
+        oSerieNumerica1.ShowSerie1For(numTerminos);
+        System.out.println("");
+        System.out.println("Usando While:");
+        oSerieNumerica1.ShowSerie1While(numTerminos);
+        System.out.println("");
+        System.out.println("Usando doWhile:");
+        oSerieNumerica1.ShowSerie1Dowhile(numTerminos);
+        System.out.println("");
+
+        System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+        
+        System.out.println("");
+        System.out.println("Serie 2: 1 0 3 0 5 0 7 0 9 ...");
+        System.out.println("");
+        System.out.println("Usando for:");
+        oSerieNumerica2.ShowSerie2For(numTerminos);
+        System.out.println("");
+        System.out.println("Usando While:");
+        oSerieNumerica2.ShowSerie2While(numTerminos);
+        System.out.println("");
+        System.out.println("Usando doWhile:");
+        oSerieNumerica2.ShowSerie2Dowhile(numTerminos);
+        System.out.println("");
 
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");

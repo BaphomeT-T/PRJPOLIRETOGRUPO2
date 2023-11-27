@@ -20,7 +20,7 @@ public class SerieNumerica2 {
      */
 
     public void ShowSerie2For(int numTerminos) {
-        System.out.print("->  ");
+        //System.out.print("->  ");
 
         for (int i = 1; i <= numTerminos; i++) {
             if (i % 2 == 0) {
@@ -30,7 +30,7 @@ public class SerieNumerica2 {
             }
         }
 
-        System.out.println("\n\n");
+        //System.out.println("\n\n");
     }
 
 
@@ -42,7 +42,7 @@ public class SerieNumerica2 {
      */
 
     public void ShowSerie2While(int numTerminos) {
-        System.out.print("->  ");
+        //System.out.print("->  ");
         int i = 1;
 
         while (i <= numTerminos) {
@@ -54,7 +54,7 @@ public class SerieNumerica2 {
             i++;
         }
 
-        System.out.println("\n\n");
+        //System.out.println("\n\n");
     }
 
     /**
@@ -65,7 +65,7 @@ public class SerieNumerica2 {
      */
 
     public void ShowSerie2Dowhile(int numTerminos) {
-        System.out.print("->  ");
+        //System.out.print("->  ");
         int i = 1;
 
         do {
@@ -77,6 +77,6 @@ public class SerieNumerica2 {
             i++;
         } while (i <= numTerminos);
 
-        System.out.println("\n\n");
+        //System.out.println("\n\n");
     }
 }
