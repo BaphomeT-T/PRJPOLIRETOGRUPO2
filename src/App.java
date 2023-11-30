@@ -14,8 +14,10 @@ public class App {
         SerieNumerica9 oSerieNumerica9 = new SerieNumerica9();
         SerieNumerica10 oSerieNumerica10 = new SerieNumerica10();
         SerieNumerica12 oSerieNumerica12 = new SerieNumerica12();
+        CadenaCaracteres5 oCadenaCaracteres5 = new CadenaCaracteres5();
 
         int numTerminos;
+        String palabraOriginal;
         
         System.out.println("----------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
@@ -27,11 +29,12 @@ public class App {
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
 
          System.out.println("");
-        System.out.println("Ingrese el número de veces que desea repetir las series");
-        numTerminos = Integer.parseInt(sc.nextLine());
+         System.out.println(" >> Series Numéricas");
+         System.out.println("Ingrese el número de veces que desea repetir las series");
+         numTerminos = Integer.parseInt(sc.nextLine());
          System.out.println("");
          
-System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
         
         System.out.println("");
@@ -193,6 +196,19 @@ System.out.println("------------------------------------------------------------
 
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+        
         System.out.println("");
+        System.out.println(" >> Cadenas de Caractteres");
+        System.out.println("Ingrese la frase a la que desea que se realice los cambios");
+        palabraOriginal = sc.nextLine();
+        System.out.println("");
+
+
+        System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("");
+        System.out.println("Cadena 5: Pedir una frase y presentarla inverida con las vocales en mayusculas. ");
+        System.out.println("");
+        oCadenaCaracteres5.showCadenaCaracteres5(palabraOriginal);
     }
 }
