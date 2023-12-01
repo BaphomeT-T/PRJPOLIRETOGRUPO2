@@ -241,7 +241,7 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
             Ejemplo, frase: ballena
                     salida: AnEllAb 
 
-	C06)    Pedir una frase y presentarla inverida con las letras en mayusculas. 
+	C06)    Pedir una frase y presentarla inverida con las consonantes en mayusculas. 
             Ejemplo, frase: ballena
                     salida: aNeLLaB 
 	
