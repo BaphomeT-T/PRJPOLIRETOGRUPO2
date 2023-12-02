@@ -217,8 +217,10 @@ public class App {
                  System.out.println(" >> Cadenas de Caractteres");
                  System.out.println("Ingrese la frase a la que desea que se realice los cambios");
                  palabraOriginal = sc.nextLine();
+                 System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                 System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                  System.out.println("");
-
+                 
 
                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                   System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
@@ -226,8 +228,51 @@ public class App {
                   System.out.println("Cadena 5: Pedir una frase y presentarla inverida con las vocales en mayusculas. ");
                   System.out.println("");
                   CadenaCaracteres5 oCadenaCaracteres5 = new CadenaCaracteres5();
-
                   oCadenaCaracteres5.showCadenaCaracteres5(palabraOriginal);
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                  System.out.println("");
+                  System.out.println("Cadena 6: Pedir una frase y presentarla inverida con las consonantes en mayusculas. ");
+                  System.out.println("");
+                  CadenaCaracteres6 oCadenaCaracteres6 = new CadenaCaracteres6();
+                  oCadenaCaracteres6.showCadenaCaracteres6(palabraOriginal);
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                  System.out.println("");
+                  System.out.println("Cadena 7: Pedir una frase y presentarla en mayusculas y sin la J ");
+                  System.out.println("");
+                  CadenaCaracteres7 oCadenaCaracteres7 = new CadenaCaracteres7();
+                  oCadenaCaracteres7.showCadenaCaracteres7(palabraOriginal);
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                  System.out.println("");
+                  System.out.println("Cadena 8: Anagramas de palabras.  ");
+                  System.out.println("");
+                  CadenaCaracteres8 oCadenaCaracteres8 = new CadenaCaracteres8();
+                  String palabraDeterminar = oCadenaCaracteres8.returnPalabaraRandom();
+                  System.out.println("Ingrese el anagrama de la palabra: " + palabraDeterminar);
+                  int contador = 3;
+                  boolean win = false;
+                  do {
+                    String palabraAnagrama = sc.nextLine();
+                    if (oCadenaCaracteres8.comprobarAnagrama(palabraDeterminar ,palabraAnagrama.toLowerCase()) ) {
+                        System.out.println("Felicidades, encontraste el anagrama");
+                        contador = 0;
+                        win = true;
+                    } else{
+                        System.out.println("Respuesta erronea, intente de nuevo");
+                        contador--;
+                        System.out.println("Intentos restantes: " + contador);
+                    }
+                  } while (contador > 0);
+                  if (win == false) {
+                        System.out.println("Se han acabado tus itentos");
+                        System.out.println("El anagrama de: "+palabraDeterminar +" es: " + oCadenaCaracteres8.generarRespuesta(palabraDeterminar));
+                  }
+                  System.out.println("Cadena 9: Ingresa una frase y convertir una leta a mayusculas y otra a minisculas ");
+                  System.out.println("");
+                  //CadenaCaracteres7 oCadenaCaracteres7 = new CadenaCaracteres7();
+                 // oCadenaCaracteres7.showCadenaCaracteres7(palabraOriginal);
                     break;
                 case 5:
                     
