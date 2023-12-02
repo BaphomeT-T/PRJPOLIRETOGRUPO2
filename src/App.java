@@ -204,6 +204,9 @@ public class App {
                      System.out.println("Usando doWhile:");
                       oSerieNumerica12.showSerie12DoWhile(numTerminos);
                      System.out.println("");
+                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                     
                     break;
                 case 2:
                     
@@ -273,6 +276,10 @@ public class App {
                   System.out.println("");
                   CadenaCaracteres9 oCadenaCaracteres9 = new CadenaCaracteres9();
                   oCadenaCaracteres9.showCadenaCaracteres9(palabraOriginal);
+                  System.out.println("");
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                     
                     break;
                 case 5:
                     
