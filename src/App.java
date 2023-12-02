@@ -248,8 +248,31 @@ public class App {
                   System.out.println("");
                   System.out.println("Cadena 8: Anagramas de palabras.  ");
                   System.out.println("");
-                  
-                  String[] conjunto = {"delira", "lidera", "ballena", "llenaba", "Alondra", "Ladrona", "España", "apañes", "Enrique", "quieren"};
+                  CadenaCaracteres8 oCadenaCaracteres8 = new CadenaCaracteres8();
+                  String palabraDeterminar = oCadenaCaracteres8.returnPalabaraRandom();
+                  System.out.println("Ingrese el anagrama de la palabra: " + palabraDeterminar);
+                  int contador = 3;
+                  boolean win = false;
+                  do {
+                    String palabraAnagrama = sc.nextLine();
+                    if (oCadenaCaracteres8.comprobarAnagrama(palabraDeterminar ,palabraAnagrama.toLowerCase()) ) {
+                        System.out.println("Felicidades, encontraste el anagrama");
+                        contador = 0;
+                        win = true;
+                    } else{
+                        System.out.println("Respuesta erronea, intente de nuevo");
+                        contador--;
+                        System.out.println("Intentos restantes: " + contador);
+                    }
+                  } while (contador > 0);
+                  if (win == false) {
+                        System.out.println("Se han acabado tus itentos");
+                        System.out.println("El anagrama de: "+palabraDeterminar +" es: " + oCadenaCaracteres8.generarRespuesta(palabraDeterminar));
+                  }
+                  System.out.println("Cadena 9: Ingresa una frase y convertir una leta a mayusculas y otra a minisculas ");
+                  System.out.println("");
+                  //CadenaCaracteres7 oCadenaCaracteres7 = new CadenaCaracteres7();
+                 // oCadenaCaracteres7.showCadenaCaracteres7(palabraOriginal);
                     break;
                 case 5:
                     
