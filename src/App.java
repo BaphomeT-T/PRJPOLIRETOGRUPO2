@@ -209,10 +209,20 @@ public class App {
                      
                     break;
                 case 2:
-                    
+                    int numCaracteres;
+
+                    System.out.println(" >> Series de Caracteres");
+                    System.out.println("Ingrese el número de veces que desea repetir las series");
+                    numCaracteres = Integer.parseInt(sc.nextLine());
+                    System.out.println("");
                     break;
                 case 3:
-                    
+                    int niveles;
+
+                    System.out.println(" >> Figuras");
+                    System.out.println("Ingrese el tamaño/niveles de las figuras");
+                    niveles = Integer.parseInt(sc.nextLine());
+                    System.out.println("");
                     break;
                 case 4:
                     String palabraOriginal;
@@ -220,10 +230,7 @@ public class App {
                  System.out.println(" >> Cadenas de Caractteres");
                  System.out.println("Ingrese la frase a la que desea que se realice los cambios");
                  palabraOriginal = sc.nextLine();
-                 System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
-                 System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
-                 System.out.println("");
-                 
+                                 
 
                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                   System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
@@ -282,13 +289,29 @@ public class App {
                      
                     break;
                 case 5:
-                    
+                    String nombre;
+
+                    System.out.println(" >> Arrays");
+                    System.out.println("Ingrese el número de veces que desea repetir las series");
+                    nombre = sc.nextLine();
+                    System.out.println("");
                     break;
                 case 6:
-                    
+                     char caracter ;
+
+                    System.out.println(" >> Loading");
+                    System.out.println("Ingrese el caracter a mostrar en algunos loading");
+                    caracter = sc.nextLine().charAt(0);
+                    System.out.println("");
                     break;
                 case 7:
-                    
+                    int numA, numB;
+
+                    System.out.println(" >> Recursion");
+                    System.out.println("Ingrese dos números para operar");
+                    numA = Integer.parseInt(sc.nextLine());
+                    numB = Integer.parseInt(sc.nextLine());
+                    System.out.println("");
                     break;
             
                 default:
