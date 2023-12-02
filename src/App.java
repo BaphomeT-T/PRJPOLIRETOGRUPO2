@@ -326,7 +326,7 @@ public class App {
         System.out.println("                                               Fin del Programa");
         System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
         
-        System.out.println("");
+        System.out.println(" ");
         
     }
 }
