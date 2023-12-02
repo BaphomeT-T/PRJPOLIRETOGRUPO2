@@ -258,7 +258,7 @@ public class App {
                   boolean win = false;
                   do {
                     String palabraAnagrama = sc.nextLine();
-                    if (oCadenaCaracteres8.comprobarAnagrama(palabraDeterminar ,palabraAnagrama.toLowerCase()) ) {
+                    if (oCadenaCaracteres8.comprobarAnagrama(palabraDeterminar.replaceAll("[^a-z]", "") ,palabraAnagrama.toLowerCase().replaceAll("[^a-z]", "")) ) {
                         System.out.println("Felicidades, encontraste el anagrama");
                         contador = 0;
                         win = true;
@@ -274,8 +274,12 @@ public class App {
                   }
                   System.out.println("Cadena 9: Ingresa una frase y convertir una leta a mayusculas y otra a minisculas ");
                   System.out.println("");
-                  //CadenaCaracteres7 oCadenaCaracteres7 = new CadenaCaracteres7();
-                 // oCadenaCaracteres7.showCadenaCaracteres7(palabraOriginal);
+                  CadenaCaracteres9 oCadenaCaracteres9 = new CadenaCaracteres9();
+                  oCadenaCaracteres9.showCadenaCaracteres9(palabraOriginal);
+                  System.out.println("");
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                     
                     break;
                 case 5:
                     
