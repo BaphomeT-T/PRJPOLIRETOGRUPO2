@@ -294,21 +294,30 @@ public class App {
                     System.out.println(" >> Arrays");
                     System.out.println("Ingrese su nombre completo");
                     nombre = sc.nextLine();
+                    String[] nombresCompletos = nombre.split(" ");
+
                   System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                   System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                   System.out.println("");
                   System.out.println("Arrayys 1: Crear una array para cada palabra de su nombre e ingrese el porcentaje de carga para cada palabra. ");
                   System.out.println("");
                   Arrays1 oArrays1 = new Arrays1();
-                  String[] nombresCompletos = nombre.split(" ");
                   int[] porcentajes = new int[nombresCompletos.length];
                   for (int i=0 ;i<nombresCompletos.length;i++){
                     System.out.println( (i<2) ? "Ingrese el porcentaje de su " + (i+1) +"° nombre" : "Ingrese el porcentaje de su " + (i-1) +"° apellio");
                     porcentajes[i]=Integer.parseInt(sc.nextLine());
                   }
                   oArrays1.showArrays1(nombresCompletos, porcentajes);
+                  System.out.println("");
 
-
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                  System.out.println("");
+                  System.out.println("Arrayys 3: Dibujar un plano de coordenadas positivo y graficar f(x) = 2x usando como caracteres las letras de su nombre ");
+                  System.out.println("");
+                  Arrays3 oArrays3 = new Arrays3();
+                  oArrays3.showArrays3(nombresCompletos[0]);
+                  
                     break;
                 case 6:
                      char caracter ;
