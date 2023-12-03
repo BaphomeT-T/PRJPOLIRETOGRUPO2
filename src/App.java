@@ -299,7 +299,7 @@ public class App {
                   System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                   System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                   System.out.println("");
-                  System.out.println("Arrayys 1: Crear una array para cada palabra de su nombre e ingrese el porcentaje de carga para cada palabra. ");
+                  System.out.println("Arrays 1: Crear una array para cada palabra de su nombre e ingrese el porcentaje de carga para cada palabra. ");
                   System.out.println("");
                   Arrays1 oArrays1 = new Arrays1();
                   int[] porcentajes = new int[nombresCompletos.length];
@@ -309,11 +309,26 @@ public class App {
                   }
                   oArrays1.showArrays1(nombresCompletos, porcentajes);
                   System.out.println("");
-
                   System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                   System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                   System.out.println("");
-                  System.out.println("Arrayys 3: Dibujar un plano de coordenadas positivo y graficar f(x) = 2x usando como caracteres las letras de su nombre ");
+                  System.out.println("Arrays2: Crear una matriz solicitando el tamaño y caracter para almacenar la iniciales de su nombre y apellido y presentar la matriz ");
+                  System.out.println("");
+                  Arrays2 oArrays2 = new Arrays2();
+                  int tamano;
+                  char caracter1;
+                  System.out.println("Ingrese el tamaño:");
+                  tamano = Integer.parseInt(sc.nextLine());
+                  System.out.println("Ingrese un carácter para rellenar los arrays:");
+                  caracter1 = sc.nextLine().charAt(0);
+                  System.out.println("");
+                  oArrays2.showArrays2(tamano, caracter1);
+
+                  System.out.println("");
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                  System.out.println("");
+                  System.out.println("Arrays 3: Dibujar un plano de coordenadas positivo y graficar f(x) = 2x usando como caracteres las letras de su nombre ");
                   System.out.println("");
                   Arrays3 oArrays3 = new Arrays3();
                   oArrays3.showArrays3(nombresCompletos[0]);
