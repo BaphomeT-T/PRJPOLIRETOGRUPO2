@@ -1,4 +1,15 @@
+/*
+ * Copyright (C) 2k23, BaphomeT-T
+ * (JavaGenius), pdavila0113@gmail.com
+ * Version 1.0
+ */
 public class Arrays2 {
+    /**
+     * Crear una matriz solicitando el tamaño y caracter para almacenar la iniciales de su nombre y apellido y presentar la matriz
+     * 
+     * @param tamano Tamaño de matriz
+     * @param caracter Caracter del que va a estar hecho el dibujo
+     */
     public void showArrays2(int tamano, char caracter){
         char[][] matriz = new char[tamano][(tamano*2)+1];
         for (int i = 0; i < tamano; i++) {
@@ -9,7 +20,7 @@ public class Arrays2 {
                     matriz[i][j] = ' ';
                 }
             }
-        
+    
         }
         mostrarMatrizFigura(matriz);
     }
