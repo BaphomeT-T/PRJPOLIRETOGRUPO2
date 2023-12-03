@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2k23, BaphomeT-T
  * (...), pdavila0113@gmail.com
- * Version 3.0
+ * Version 1.0
  */
 public class CadenaCaracteres9 {
     private StringBuilder palabraAlterada= new StringBuilder();
