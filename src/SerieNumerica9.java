@@ -1,6 +1,6 @@
 /**
  * Copyright (C) 2k23, lalabell-a
- * (NombreGrupo), ihavequestion29@gmail.com
+ * (JavaGenius), ihavequestion29@gmail.com
  * version 1.0
  */
 

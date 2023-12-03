@@ -1,6 +1,6 @@
 /**
  * Copyright (C) 2k23,  Antony675
- * (...), antony.cobos@epn.edu.ec
+ * (JavaGenius), antony.cobos@epn.edu.ec
  * version 1.1
  */
 

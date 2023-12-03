@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2k23, andrea-m11
- * (GRUPO2), andreachicaiza11@gmail.com
+ * (JavaGenius), andreachicaiza11@gmail.com
  * Version 2.0
  */
 
