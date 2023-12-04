@@ -10,13 +10,14 @@ public class CadenaCaracteres4 {
     public void showCadenaCaracteres4(String frase, char letra) {
 
         char[] arregloFrase = frase.toCharArray();
-        for (int i = 0; i < arregloFrase.length-1; i++) {
+        for (int i = 0; i < arregloFrase.length; i++) {
             if (arregloFrase[i] == (letra)) {
                 arregloFrase[i] = ' ';
             }
         }
         String fraseSinLetra = new String(arregloFrase);  
-        System.out.println("Cadena sin la letra " + letra + ": " + fraseSinLetra);
+        System.out.println("\nCadena sin la letra " + letra + ": " + fraseSinLetra);
+        System.out.println(" ");
 
 
         // Con la función replaceAll:

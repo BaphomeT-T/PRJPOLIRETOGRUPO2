@@ -15,14 +15,15 @@ public class CadenaCaracteres3 {
     public void showCadenaCaracteres3(String frase, char vocal) {
 
         char[] arregloFrase = frase.toCharArray();
-        for (int i = 0; i < arregloFrase.length-1; i++) {
+        for (int i = 0; i < arregloFrase.length; i++) {
             if (arregloFrase[i] == (vocal)) {
                 arregloFrase[i] = ' ';
             }
         }
         String fraseSinVocal = new String(arregloFrase);  
-        System.out.println("Cadena sin la vocal " + vocal + ": " + fraseSinVocal);
-
+        System.out.println("\nCadena sin la vocal " + vocal + ": " + fraseSinVocal);
+        System.out.println(" ");
+        
 
         // Con la función replaceAll:
         /*     

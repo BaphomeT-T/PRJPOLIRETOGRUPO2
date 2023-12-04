@@ -217,7 +217,7 @@ public class App {
                     System.out.println("");
                     break;
                 case 3:
-                    int niveles;
+                    int niveles = 0;
 
                     System.out.println(" >> Figuras");
                     System.out.println("Ingrese el tamaño/niveles de las figuras");
@@ -229,7 +229,7 @@ public class App {
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                    
                     System.out.println("");
-                    System.out.println("Figura 16: ");
+                    System.out.println("Figura 17: ");
                     System.out.println("");
                     Figuras16 oFiguras16 = new Figuras16();
                     oFiguras16.showFigura16(niveles);

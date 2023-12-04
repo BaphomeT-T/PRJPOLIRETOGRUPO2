@@ -15,13 +15,14 @@ public class CadenaCaracteres1 {
         int vocales = 0;
         char[] arregloVocales = {'a','e','i','o','u'};
 		for (int i = 0; i < frase.length(); i++) {     
-            for (int j = 0; j < arregloVocales.length-1; j++) {
-                if (frase.trim().charAt(i) == arregloVocales[i]) {
+            for (int j = 0; j < arregloVocales.length; j++) {
+                if (frase.charAt(i) == arregloVocales[j]) {
                     vocales++;  
                 }
             }
 		}
 	    System.out.println("Hay: " + vocales + " vocales");
+        System.out.println(" ");
     }
 
 }

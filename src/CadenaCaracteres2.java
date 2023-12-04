@@ -13,16 +13,18 @@ public class CadenaCaracteres2 {
      */
     public void showCadenaCaracteres2(String frase) {
 
-        int consonantes = 0;
+        int consonantes = frase.trim().length();
         char[] arregloVocales = {'a','e','i','o','u'};
-		for (int i = 0; i < frase.length(); i++) {     
-            for (int j = 0; j < arregloVocales.length-1; j++) {
-                if (frase.trim().charAt(i) != arregloVocales[i]) {
-                    consonantes++;  
+
+		for (int i = 0; i < frase.trim().length(); i++) {     
+            for (int j = 0; j < arregloVocales.length; j++) {
+                if (frase.trim().charAt(i) == arregloVocales[j]) {
+                    consonantes--;
                 }
             }
 		}
 	    System.out.println("Hay: " + consonantes + " consonantes");
+        System.out.println(" ");
     }
 
 }
