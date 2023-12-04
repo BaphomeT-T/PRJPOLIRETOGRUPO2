@@ -273,11 +273,55 @@ public class App {
 
                 case 4:
                     String palabraOriginal;
+                    Character vocalAQuitar;
+                    Character letraAQuitar;
 
-                 System.out.println(" >> Cadenas de Caractteres");
-                 System.out.println("Ingrese la frase a la que desea que se realice los cambios");
-                 palabraOriginal = sc.nextLine();
-                                 
+                System.out.println(" >> Cadenas de Caractteres");
+                System.out.println("Ingrese la frase a la que desea que se realice los cambios");
+                palabraOriginal = sc.nextLine();
+
+                System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                System.out.println("");
+
+                System.out.println("Cadena 1: Pedir una frase y contar las vocales.");
+                System.out.println("");
+                CadenaCaracteres1 oCadenaCaracteres1 = new CadenaCaracteres1();
+                oCadenaCaracteres1.showCadenaCaracteres1(palabraOriginal);
+
+                System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                System.out.println("");
+
+                System.out.println("Cadena 2: Pedir una frase y contar las consonantes.");
+                System.out.println("");
+                CadenaCaracteres2 oCadenaCaracteres2 = new CadenaCaracteres2();
+                oCadenaCaracteres2.showCadenaCaracteres2(palabraOriginal);
+
+                System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                System.out.println("");
+
+                System.out.println("Cadena 3: Pedir una frase y una vocal, eliminar la vocal ingresada de la frase.");
+                System.out.println("");
+                CadenaCaracteres3 oCadenaCaracteres3 = new CadenaCaracteres3();
+                System.out.println("Ingrese la vocal que desea eliminar");
+                vocalAQuitar = sc.next().charAt(0);
+                oCadenaCaracteres3.showCadenaCaracteres3(palabraOriginal, vocalAQuitar);
+                
+
+                System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                System.out.println("");
+
+                System.out.println("Cadena 4: Pedir una frase y una letra, eliminar la letra ingresada de la frase.");
+                System.out.println("");
+                CadenaCaracteres4 oCadenaCaracteres4 = new CadenaCaracteres4();
+                System.out.println("Ingrese la vocal que desea eliminar");
+                letraAQuitar = sc.next().charAt(0);
+                oCadenaCaracteres4.showCadenaCaracteres4(palabraOriginal, letraAQuitar);
+
+
 
                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                   System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
