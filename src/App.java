@@ -560,8 +560,11 @@ public class App {
                      char caracter ;
 
                     System.out.println(" >> Loading");
-                    System.out.println("Ingrese el caracter a mostrar en algunos loading");
-                    caracter = sc.nextLine().charAt(0);
+                    System.out.println("Loading8: Pedir el nombre y apellidos y realizar la carga mostrando letra a letra hasta el 100% ");
+                    Loading8 oLoading8 = new Loading8(); 
+                    System.out.println("Ingrese su nombre y apellidos:");
+                    String nombreCompleto = scanner.nextLine();
+                    oLoading8.mostrarNombrePorcentaje(nombreCompleto);
                     System.out.println("");
                     break;
                 case 7:
