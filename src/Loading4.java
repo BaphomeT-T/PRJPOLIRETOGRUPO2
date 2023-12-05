@@ -14,7 +14,7 @@
             System.out.print("\r" + c + " " + i + " %");
 
             try {
-                Thread.sleep(500);
+                Thread.sleep(100);
             } catch (InterruptedException ignored) {
 
             }
