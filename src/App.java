@@ -560,21 +560,103 @@ public class App {
                      char caracter ;
 
                     System.out.println(" >> Loading");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("");
                     System.out.println("Loading8: Pedir el nombre y apellidos y realizar la carga mostrando letra a letra hasta el 100% ");
                     Loading8 oLoading8 = new Loading8(); 
                     System.out.println("Ingrese su nombre y apellidos:");
                     String nombreCompleto = scanner.nextLine();
                     oLoading8.mostrarNombrePorcentaje(nombreCompleto);
                     System.out.println("");
+                    
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("");
+                    System.out.println("Loading9: Pedir y mostrar el nombre completo, mostrando solo una letra en la misma linea 0% hasta 100% ");
+                    Loading9 oLoading9 = new Loading9();
+                    oLoading9.mostrarNombrePorcentaje(nombreCompleto);
+                    System.out.println("");
+
+                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("");
+                    System.out.println("Desplazar la figura a la derecha y regresar  ");
+                    Loading10 oLoading10 = new Loading10();
+                    oLoading10.desplazarFigura();
+                    System.out.print("\033[H\033[2J");
+                    
                     break;
                 case 7:
                     int numA, numB;
 
                     System.out.println(" >> Recursion");
-                    System.out.println("Ingrese dos números para operar");
-                    numA = Integer.parseInt(sc.nextLine());
-                    numB = Integer.parseInt(sc.nextLine());
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                     System.out.println("");
+                    System.out.println("crear un metodo recursivo para obtener factorial(n)  ");
+                    CalcularFactorial oCalcularFactorial = new CalcularFactorial();
+                    System.out.print("Ingrese un número para calcular el factorial: ");
+                    int n = scanner.nextInt();
+                    long resultado = oCalcularFactorial.calcularFactorial(n);
+                    System.out.println("El factorial de " + n + " es: " + resultado);
+
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("");
+                    System.out.println("crear un metodo recursivo para obtener la suma(a,b)");
+                    SumaRecursiva oSumaRecursiva = new SumaRecursiva();
+                    System.out.print("Ingrese el valor de a: ");
+                    int a = scanner.nextInt();
+                    System.out.print("Ingrese el valor de b: ");
+                    int b = scanner.nextInt();
+                    int resultadoSuma = oSumaRecursiva.obtenerSuma(a, b);
+                    System.out.println("La suma de " + a + " y " + b + " es: " + resultadoSuma);Ç
+
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("");
+                    System.out.println("crear un metodo recursivo para obtener la multiplicacion(c,d)");
+                    MultiplicacionRecursiva oMultiplicacionRecursiva = new MultiplicacionRecursiva();
+                    System.out.print("Ingrese el valor de c: ");
+                    int c = scanner.nextInt();
+                    System.out.print("Ingrese el valor de d: ");
+                    int d = scanner.nextInt();
+                    int resultadoMultiplicacion = oMultiplicacionRecursiva.realizarMultiplicacion(c, d);
+                    System.out.println("La multiplicación de " + c + " y " + d + " es: " + resultadoMultiplicacion);
+
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("");
+                    System.out.println("crear un metodo recursivo para obtener la potencia(e,f)");
+                    PotenciaRecursiva oPotenciaRecursiva = new PotenciaRecursiva();
+                    System.out.print("Ingrese el valor de la base (e): ");
+                    int e = scanner.nextInt();
+                    System.out.print("Ingrese el valor del exponente (f): ");
+                    int f = scanner.nextInt();
+                    int resultadoPotencia = oPotenciaRecursiva.calcularPotencia(e, f);
+                    System.out.println(e + " elevado a la " + f + " es: " + resultadoPotencia);
+
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("");
+                    System.out.println("crear un metodo recursivo para obtener la conteoProgregresivoHasta(n) / imprimir el avance");
+                    ConteoProgresivo oConteoProgresivo = new ConteoProgresivo();
+                    System.out.print("Ingrese el valor de m para el conteo progresivo: ");
+                    int m = scanner.nextInt();
+                    System.out.println("Comenzando el conteo progresivo:");
+                    oConteoProgresivo.conteoProgresivoHasta(m, 1);
+
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("");
+                    System.out.println("crear un metodo recursivo para obtener la conteoRegresivo(n)  hasta 0 / imprimir el avance");
+                    ConteoRegresivo oConteoRegresivo = new ConteoRegresivo();
+                    System.out.print("Ingrese el valor de x para el conteo regresivo: ");
+                    int x = scanner.nextInt();
+                    System.out.println("Comenzando el conteo regresivo:");
+                    oConteoRegresivo.conteoRegresivoDesde(x);
+                    
                     break;
             
                 default:
