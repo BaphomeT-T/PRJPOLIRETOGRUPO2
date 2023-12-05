@@ -400,6 +400,7 @@ public class App {
 
 
 
+
                 break;
 
                 case 4:
@@ -553,7 +554,14 @@ public class App {
                   System.out.println("Arrays 3: Dibujar un plano de coordenadas positivo y graficar f(x) = 2x usando como caracteres las letras de su nombre ");
                   System.out.println("");
                   Arrays3 oArrays3 = new Arrays3();
-                  oArrays3.showArrays3(nombresCompletos[0]);
+                  oArrays3.showArrays3(nombresCompletos[0]);System.out.println("");
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                  System.out.println("");
+                  System.out.println("Arrays 4: Crear un matriz donde forme una X con su nombre y apellido ");
+                  System.out.println("");
+                  Arrays4 oArrays4 =new Arrays4();
+                  oArrays4.showArrays4(nombresCompletos[0],nombresCompletos[2]);
                   
                     break;
                 case 6:
@@ -563,7 +571,7 @@ public class App {
                     System.out.println("Loading8: Pedir el nombre y apellidos y realizar la carga mostrando letra a letra hasta el 100% ");
                     Loading8 oLoading8 = new Loading8(); 
                     System.out.println("Ingrese su nombre y apellidos:");
-                    String nombreCompleto = scanner.nextLine();
+                    String nombreCompleto = sc.nextLine();
                     oLoading8.mostrarNombrePorcentaje(nombreCompleto);
                     System.out.println("");
                     break;
