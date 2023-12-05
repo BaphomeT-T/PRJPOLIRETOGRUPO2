@@ -562,6 +562,15 @@ public class App {
                   System.out.println("");
                   Arrays4 oArrays4 =new Arrays4();
                   oArrays4.showArrays4(nombresCompletos[0],nombresCompletos[2]);
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                  System.out.println("");
+                  System.out.println("Arrays 5: Crear un matriz cuadrada del tamaño de su nombre, colocar cada letra de sus nombres completos de forma randomica/aleatorio.\r\n" + //
+                          "        En el caso que conincidan las posiciones poner un *. \r\n" + //
+                          "        Para visulizar el proceso usar un delay ");
+                  Array5 oArray5 = new Array5(); 
+                  oArray5.ShowArray5For(nombresCompletos[0]);
+                  System.out.println("");
                   
                     break;
                 case 6:
@@ -570,6 +579,10 @@ public class App {
                     System.out.println(" >> Loading");
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("");
+                    System.out.println("Loading 4: Waiting que inicia en 0  a 100% usar los signos o0o para simular un movimiento de ida y vuelta en el mismo puesto");
+                    Loading4 oLoading4 = new Loading4(); 
+                    oLoading4.ShowLoading4For();
                     System.out.println("");
                     System.out.println("Loading8: Pedir el nombre y apellidos y realizar la carga mostrando letra a letra hasta el 100% ");
                     Loading8 oLoading8 = new Loading8(); 
