@@ -605,7 +605,7 @@ public class App {
                     System.out.println("crear un metodo recursivo para obtener factorial(n)  ");
                     CalcularFactorial oCalcularFactorial = new CalcularFactorial();
                     System.out.print("Ingrese un número para calcular el factorial: ");
-                    int n = scanner.nextInt();
+                    int n = sc.nextInt();
                     long resultado = oCalcularFactorial.calcularFactorial(n);
                     System.out.println("El factorial de " + n + " es: " + resultado);
 
@@ -615,11 +615,11 @@ public class App {
                     System.out.println("crear un metodo recursivo para obtener la suma(a,b)");
                     SumaRecursiva oSumaRecursiva = new SumaRecursiva();
                     System.out.print("Ingrese el valor de a: ");
-                    int a = scanner.nextInt();
+                    int a = sc.nextInt();
                     System.out.print("Ingrese el valor de b: ");
-                    int b = scanner.nextInt();
+                    int b = sc.nextInt();
                     int resultadoSuma = oSumaRecursiva.obtenerSuma(a, b);
-                    System.out.println("La suma de " + a + " y " + b + " es: " + resultadoSuma);Ç
+                    System.out.println("La suma de " + a + " y " + b + " es: " + resultadoSuma);
 
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
@@ -627,9 +627,9 @@ public class App {
                     System.out.println("crear un metodo recursivo para obtener la multiplicacion(c,d)");
                     MultiplicacionRecursiva oMultiplicacionRecursiva = new MultiplicacionRecursiva();
                     System.out.print("Ingrese el valor de c: ");
-                    int c = scanner.nextInt();
+                    int c = sc.nextInt();
                     System.out.print("Ingrese el valor de d: ");
-                    int d = scanner.nextInt();
+                    int d = sc.nextInt();
                     int resultadoMultiplicacion = oMultiplicacionRecursiva.realizarMultiplicacion(c, d);
                     System.out.println("La multiplicación de " + c + " y " + d + " es: " + resultadoMultiplicacion);
 
@@ -639,9 +639,9 @@ public class App {
                     System.out.println("crear un metodo recursivo para obtener la potencia(e,f)");
                     PotenciaRecursiva oPotenciaRecursiva = new PotenciaRecursiva();
                     System.out.print("Ingrese el valor de la base (e): ");
-                    int e = scanner.nextInt();
+                    int e = sc.nextInt();
                     System.out.print("Ingrese el valor del exponente (f): ");
-                    int f = scanner.nextInt();
+                    int f = sc.nextInt();
                     int resultadoPotencia = oPotenciaRecursiva.calcularPotencia(e, f);
                     System.out.println(e + " elevado a la " + f + " es: " + resultadoPotencia);
 
@@ -651,7 +651,7 @@ public class App {
                     System.out.println("crear un metodo recursivo para obtener la conteoProgregresivoHasta(n) / imprimir el avance");
                     ConteoProgresivo oConteoProgresivo = new ConteoProgresivo();
                     System.out.print("Ingrese el valor de m para el conteo progresivo: ");
-                    int m = scanner.nextInt();
+                    int m = sc.nextInt();
                     System.out.println("Comenzando el conteo progresivo:");
                     oConteoProgresivo.conteoProgresivoHasta(m, 1);
 
@@ -661,7 +661,7 @@ public class App {
                     System.out.println("crear un metodo recursivo para obtener la conteoRegresivo(n)  hasta 0 / imprimir el avance");
                     ConteoRegresivo oConteoRegresivo = new ConteoRegresivo();
                     System.out.print("Ingrese el valor de x para el conteo regresivo: ");
-                    int x = scanner.nextInt();
+                    int x = sc.nextInt();
                     System.out.println("Comenzando el conteo regresivo:");
                     oConteoRegresivo.conteoRegresivoDesde(x);
                     
