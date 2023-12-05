@@ -277,6 +277,13 @@ public class App {
                 System.out.println("");
                 oCaracteres8.ShowCaracteres8For(numCaracteres);
                 System.out.println("");
+                System.out.println("");
+                Caracteres9 oCaracteres9 = new Caracteres9();
+                System.out.println("");
+                System.out.println("Serie 9:a  b  c  dd  eee  fffff  gggggggg...");
+                System.out.println("");
+                oCaracteres9.showCaracteres9(numCaracteres);
+                System.out.println("");
                 break;
                 case 3:
                     int niveles = 0;
@@ -286,12 +293,74 @@ public class App {
                     niveles = Integer.parseInt(sc.nextLine());
                     System.out.println("");
                     
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                   
+                    System.out.println("");
+                    System.out.println("Figura 1: ");
+                    System.out.println("");
+                    Figuras1 oFiguras1 = new Figuras1();
+                    oFiguras1.showFigura1(niveles);
 
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                    
                     System.out.println("");
-                    System.out.println("Figura 17: ");
+                    System.out.println("Figura 2: ");
+                    System.out.println("");
+                    Figuras2 oFiguras2 = new Figuras2();
+                    oFiguras2.showFigura2(niveles);
+
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                   
+                    System.out.println("");
+                    System.out.println("Figura 3: ");
+                    System.out.println("");
+                    Figuras3 oFiguras3 = new Figuras3();
+                    oFiguras3.showFigura3(niveles);
+
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                   
+                    System.out.println("");
+                    System.out.println("Figura 4: ");
+                    System.out.println("");
+                    Figuras4 oFiguras4 = new Figuras4();
+                    oFiguras4.showFigura4(niveles);
+
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                   
+                    System.out.println("");
+                    System.out.println("Figura 5: ");
+                    System.out.println("");
+                    Figuras5 oFiguras5 = new Figuras5();
+                    oFiguras5.showFigura5(niveles);
+
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                   
+                    System.out.println("");
+                    System.out.println("Figura 6: ");
+                    System.out.println("");
+                    Figuras6 oFiguras6 = new Figuras6();
+                    oFiguras6.showFigura6(niveles);
+
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                   
+                    System.out.println("");
+                    System.out.println("Figura 7: ");
+                    System.out.println("");
+                    Figuras7 oFiguras7 = new Figuras7();
+                    oFiguras7.showFigura7(niveles);
+
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                   
+                    System.out.println("");
+                    System.out.println("Figura 16: ");
                     System.out.println("");
                     Figuras16 oFiguras16 = new Figuras16();
                     oFiguras16.showFigura16(niveles);
