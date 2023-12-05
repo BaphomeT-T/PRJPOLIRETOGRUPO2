@@ -577,6 +577,29 @@ public class App {
                      char caracter ;
 
                     System.out.println(" >> Loading");
+                    System.out.println("Ingrese el caracter que desea en las cargas");
+                    caracter = sc.nextLine().charAt(0);
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("");
+                    System.out.println("Loading 1: Indicador de carga desde 0  a 100% usar los signos (\\|/-|) para simular un movimiento rotacional de carga 0% hasta ");
+                    Loading1 oLoading1 = new Loading1();
+                    oLoading1.indicadorDeCarga();
+                    System.out.println("");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("");
+                    System.out.println("Loading 2: Pedir un caracter para la simular la carga y la logitud de la barra es de 20 caracteres ");
+                    Loading2 oLoading2 = new Loading2();
+                    oLoading2.indicadorDeCargaPersonalizado(caracter);
+                    System.out.println("");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("");
+                    System.out.println("Loading 3: Pedir un caracter que se desplaza de izquierda a derecha en una la barra es de 20 caracteres ");
+                    Loading3 oLoading3 = new Loading3();
+                    oLoading3.showLoading3(caracter);
+                    System.out.println("");
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                     System.out.println("");
@@ -674,7 +697,7 @@ public class App {
                     System.out.println("crear un metodo recursivo para obtener la conteoRegresivo(n)  hasta 0 / imprimir el avance");
                     ConteoRegresivo oConteoRegresivo = new ConteoRegresivo();
                     System.out.print("Ingrese el valor de x para el conteo regresivo: ");
-                    int x = sc.nextInt();
+                    int x = Integer.parseInt(sc.nextLine());
                     System.out.println("Comenzando el conteo regresivo:");
                     oConteoRegresivo.conteoRegresivoDesde(x);
                     

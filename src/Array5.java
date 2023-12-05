@@ -16,8 +16,8 @@ public class Array5 {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
 
-        System.out.print("Ingresa tu nombre completo: ");
-        nombresCompletos = sc.nextLine();
+       // System.out.print("Ingresa tu nombre completo: ");
+        //nombresCompletos = sc.nextLine();
         char[][] matriz = new char[7][7];
         char[] chars = nombresCompletos.replaceAll("\\s", "").toCharArray();
 
