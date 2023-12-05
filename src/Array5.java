@@ -13,7 +13,7 @@ import java.util.Random;
 public class Array5 {
 
     public void ShowArray5For(String nombresCompletos) throws InterruptedException {
-        Scanner sc = new Scanner(System.in);
+       // Scanner sc = new Scanner(System.in);
         Random random = new Random();
 
        // System.out.print("Ingresa tu nombre completo: ");
@@ -50,6 +50,6 @@ public class Array5 {
 
         System.out.println(sb.toString());
         Thread.sleep(1000); 
-        sc.close();
+       
     }
 }
