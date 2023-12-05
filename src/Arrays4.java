@@ -1,4 +1,17 @@
+/*
+ * Copyright (C) 2k23, BaphomeT-T
+ * (JavaGenius), pdavila0113@gmail.com
+ * Version 1.0
+ */
 public class Arrays4 {
+    /**
+     * This method takes two strings as input, `nombre` and `apellido`, and creates a matrix of characters based on the lengths of these strings.
+     * The matrix is then filled with characters from the input strings in a specific pattern.
+     * Finally, the matrix is printed.
+     *
+     * @param nombre (String): The first name.
+     * @param apellido (String): The last name.
+     */
     public void showArrays4(String nombre, String apellido) {
         int longitudMaxima = Math.max(nombre.length(), apellido.length());
         char[][] matriz = new char[2 * longitudMaxima - 1][2 * longitudMaxima - 1];
@@ -10,14 +23,9 @@ public class Arrays4 {
             }else if (i >= apellido.length() && i<nombre.length()) {
                 matriz[i][i] = Character.toUpperCase(nombre.charAt(i));
                 matriz[i][2 * longitudMaxima - 2 - i] = ' ' ;
-
-               //matriz[2 * longitudMaxima - 2 - i][i] = Character.toUpperCase(apellido.charAt(apellido.length()-1));
-               // matriz[2 * longitudMaxima - 2 - i][2 * longitudMaxima - 2 - i] = Character.toUpperCase(apellido.charAt(apellido.length()-1)); 
             } else{
                 matriz[i][i] = Character.toUpperCase(nombre.charAt(i));
                 matriz[i][2 * longitudMaxima - 2 - i] = Character.toUpperCase(apellido.charAt(i));
-                //matriz[2 * longitudMaxima - 2 - i][i] = Character.toUpperCase(apellido.charAt(i));
-                //matriz[2 * longitudMaxima - 2 - i][2 * longitudMaxima - 2 - i] = Character.toUpperCase(apellido.charAt(i));
             }
             
         }
