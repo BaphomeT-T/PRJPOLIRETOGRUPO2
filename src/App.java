@@ -506,7 +506,7 @@ public class App {
                 System.out.println("");
                 CadenaCaracteres3 oCadenaCaracteres3 = new CadenaCaracteres3();
                 System.out.println("Ingrese la vocal que desea eliminar");
-                vocalAQuitar = sc.next().charAt(0);
+                vocalAQuitar = sc.nextLine().charAt(0);
                 oCadenaCaracteres3.showCadenaCaracteres3(palabraOriginal, vocalAQuitar);
                 
 
@@ -518,7 +518,7 @@ public class App {
                 System.out.println("");
                 CadenaCaracteres4 oCadenaCaracteres4 = new CadenaCaracteres4();
                 System.out.println("Ingrese la vocal que desea eliminar");
-                letraAQuitar = sc.next().charAt(0);
+                letraAQuitar = sc.nextLine().charAt(0);
                 oCadenaCaracteres4.showCadenaCaracteres4(palabraOriginal, letraAQuitar);
 
 
@@ -570,6 +570,9 @@ public class App {
                         System.out.println("Se han acabado tus itentos");
                         System.out.println("El anagrama de: "+palabraDeterminar +" es: " + oCadenaCaracteres8.generarRespuesta(palabraDeterminar));
                   }
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                  System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                  System.out.println("");
                   System.out.println("Cadena 9: Ingresa una frase y convertir una leta a mayusculas y otra a minisculas ");
                   System.out.println("");
                   CadenaCaracteres9 oCadenaCaracteres9 = new CadenaCaracteres9();
