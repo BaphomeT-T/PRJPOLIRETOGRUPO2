@@ -87,6 +87,16 @@ public class App {
                      System.out.println("Usando doWhile:");
                      oSerieNumerica3.showSerie03DoWhile(numTerminos);
                      System.out.println("");
+
+                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+        
+                     SerieNumerica4 oSerieNumerica4 = new SerieNumerica4();
+                     System.out.println("");
+                     System.out.println("Serie 4: 0/2  1/4  1/6  2/8  3/10  5/12  8/14  13/16 ...");
+                     System.out.println("");
+                     System.out.println("Usando for:");
+                     oSerieNumerica4.showSerieNumerica4(numTerminos);
       
                      System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                      System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
