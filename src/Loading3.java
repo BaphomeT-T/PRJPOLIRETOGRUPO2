@@ -1,32 +1,47 @@
-public class Loading3 {
-    public void showLoading3(char caracter){
+
+/*
+ * Copyright (C) 2k23, BaphomeT-T
+ * (JavaGenius), pdavila0113@gmail.com
+ * Version 1.0
+ */public class Loading3 {
+    /**
+     * Displays a loading bar animation in the console using a specified character.
+     * The loading bar progresses from 0% to 100% in increments of 5%.
+     *
+     * @param caracter caracter usado en el loadinng
+     */
+    public void showLoading3(char caracter) {
         int porcentaje = 0;
-        String barra = "                        "; // 20 spaces to represent the bar
-    
-        while (porcentaje <= 50) {
-            
-            System.out.print("\r[" + barra.substring(0, (porcentaje*2) / 5) + caracter + barra.substring((porcentaje*2) / 5 + 1) + "] " + porcentaje + "%");
+        int porcentajeAuxiliar = 0;
+        String barra = "                    ";
 
-            
-            porcentaje += 5;
-            try {
-                Thread.sleep(100); // Delay for smooth animation
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-        while (porcentaje > 50 && porcentaje<=100) {
-            
-            System.out.print("\r[" + barra.substring((porcentaje) / 5 + 1)+ caracter +barra.substring(0, (porcentaje) / 5)   + "] " + porcentaje + "%");
-            porcentaje += 5;
-            try {
-                Thread.sleep(100); // Delay for smooth animation
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
+        while (porcentaje <= 100) {
 
-                        
+            if (porcentajeAuxiliar == 20) {
+                for (porcentajeAuxiliar = 20; porcentajeAuxiliar > 0; porcentajeAuxiliar--) {
+                    System.out.print("\r[" + barra.substring(0, porcentajeAuxiliar) + caracter + barra.substring(porcentajeAuxiliar) + "] " + porcentaje + "%");
+
+                    try {
+                        Thread.sleep(10);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+            } else {
+                for (porcentajeAuxiliar = 0; porcentajeAuxiliar < 20; porcentajeAuxiliar++) {
+                    System.out.print("\r[" + barra.substring(0, porcentajeAuxiliar) + caracter + barra.substring(porcentajeAuxiliar) + "] " + porcentaje + "%");
+                    try {
+                        Thread.sleep(10);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+            }
+            porcentaje += 5;
+
+        }
 
     }
         
