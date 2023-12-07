@@ -12,8 +12,8 @@ public class CadenaCaracteres8 {
         * @return una palabra random de un arreglo de strings.
         */
     public String returnPalabaraRandom(){
-        return arregloAnagramas[6];      
-        //return arregloAnagramas[(int) (Math.random() * arregloAnagramas.length)];
+           
+        return arregloAnagramas[(int) (Math.random() * arregloAnagramas.length)];
 
 
    }
