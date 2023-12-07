@@ -674,6 +674,29 @@ public class App {
                     System.out.println("Loading 4: Waiting que inicia en 0  a 100% usar los signos o0o para simular un movimiento de ida y vuelta en el mismo puesto");
                     Loading4 oLoading4 = new Loading4(); 
                     oLoading4.ShowLoading4For();
+
+                    System.out.println("");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("");
+                    System.out.println("Loading 5: Crear una barra es de 20 caracteres, la barra avanza cambiando la punta entre > -");
+                    Loading5 oLoading5 = new Loading5(); 
+                    oLoading5.imprimprimirLoading5();
+                    System.out.println("");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("");
+                    System.out.println("Loading 6: Crear una barra es de 20 caracteres, la barra <=> se desplaza de izquierda a derecha");
+                    Loading6 oLoading6 = new Loading6(); 
+                    oLoading6.imprimirLoading6();
+
+                    System.out.println("");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("");
+                    System.out.println("Loading 7: Crear una barra es de 20 caracteres, la barra avanza cambiando la punta con movimiento rotacional signos \\|/-|");
+                    Loading7 oLoading7 = new Loading7(); 
+                    oLoading7.imprimirLoading7();
                     System.out.println("");
                     System.out.println("Loading8: Pedir el nombre y apellidos y realizar la carga mostrando letra a letra hasta el 100% ");
                     Loading8 oLoading8 = new Loading8(); 
@@ -709,7 +732,7 @@ public class App {
                     System.out.println("crear un metodo recursivo para obtener factorial(n)  ");
                     CalcularFactorial oCalcularFactorial = new CalcularFactorial();
                     System.out.print("Ingrese un número para calcular el factorial: ");
-                    int n = sc.nextInt();
+                    int n = Integer.parseInt(sc.nextLine());
                     long resultado = oCalcularFactorial.calcularFactorial(n);
                     System.out.println("El factorial de " + n + " es: " + resultado);
 
@@ -719,9 +742,9 @@ public class App {
                     System.out.println("crear un metodo recursivo para obtener la suma(a,b)");
                     SumaRecursiva oSumaRecursiva = new SumaRecursiva();
                     System.out.print("Ingrese el valor de a: ");
-                    int a = sc.nextInt();
+                    int a = Integer.parseInt(sc.nextLine());
                     System.out.print("Ingrese el valor de b: ");
-                    int b = sc.nextInt();
+                    int b = Integer.parseInt(sc.nextLine());
                     int resultadoSuma = oSumaRecursiva.obtenerSuma(a, b);
                     System.out.println("La suma de " + a + " y " + b + " es: " + resultadoSuma);
 
@@ -731,9 +754,9 @@ public class App {
                     System.out.println("crear un metodo recursivo para obtener la multiplicacion(c,d)");
                     MultiplicacionRecursiva oMultiplicacionRecursiva = new MultiplicacionRecursiva();
                     System.out.print("Ingrese el valor de c: ");
-                    int c = sc.nextInt();
+                    int c = Integer.parseInt(sc.nextLine());
                     System.out.print("Ingrese el valor de d: ");
-                    int d = sc.nextInt();
+                    int d = Integer.parseInt(sc.nextLine());
                     int resultadoMultiplicacion = oMultiplicacionRecursiva.realizarMultiplicacion(c, d);
                     System.out.println("La multiplicación de " + c + " y " + d + " es: " + resultadoMultiplicacion);
 
@@ -743,9 +766,9 @@ public class App {
                     System.out.println("crear un metodo recursivo para obtener la potencia(e,f)");
                     PotenciaRecursiva oPotenciaRecursiva = new PotenciaRecursiva();
                     System.out.print("Ingrese el valor de la base (e): ");
-                    int e = sc.nextInt();
+                    int e = Integer.parseInt(sc.nextLine());
                     System.out.print("Ingrese el valor del exponente (f): ");
-                    int f = sc.nextInt();
+                    int f = Integer.parseInt(sc.nextLine());
                     int resultadoPotencia = oPotenciaRecursiva.calcularPotencia(e, f);
                     System.out.println(e + " elevado a la " + f + " es: " + resultadoPotencia);
 
@@ -755,7 +778,7 @@ public class App {
                     System.out.println("crear un metodo recursivo para obtener la conteoProgregresivoHasta(n) / imprimir el avance");
                     ConteoProgresivo oConteoProgresivo = new ConteoProgresivo();
                     System.out.print("Ingrese el valor de m para el conteo progresivo: ");
-                    int m = sc.nextInt();
+                    int m = Integer.parseInt(sc.nextLine());
                     System.out.println("Comenzando el conteo progresivo:");
                     oConteoProgresivo.conteoProgresivoHasta(m, 1);
 
