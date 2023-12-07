@@ -674,6 +674,29 @@ public class App {
                     System.out.println("Loading 4: Waiting que inicia en 0  a 100% usar los signos o0o para simular un movimiento de ida y vuelta en el mismo puesto");
                     Loading4 oLoading4 = new Loading4(); 
                     oLoading4.ShowLoading4For();
+
+                    System.out.println("");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("");
+                    System.out.println("Loading 5: Crear una barra es de 20 caracteres, la barra avanza cambiando la punta entre > -");
+                    Loading5 oLoading5 = new Loading5(); 
+                    oLoading5.imprimprimirLoading5();
+                    System.out.println("");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("");
+                    System.out.println("Loading 6: Crear una barra es de 20 caracteres, la barra <=> se desplaza de izquierda a derecha");
+                    Loading6 oLoading6 = new Loading6(); 
+                    oLoading6.imprimirLoading6();
+
+                    System.out.println("");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("");
+                    System.out.println("Loading 7: Crear una barra es de 20 caracteres, la barra avanza cambiando la punta con movimiento rotacional signos \\|/-|");
+                    Loading7 oLoading7 = new Loading7(); 
+                    oLoading7.imprimirLoading7();
                     System.out.println("");
                     System.out.println("Loading8: Pedir el nombre y apellidos y realizar la carga mostrando letra a letra hasta el 100% ");
                     Loading8 oLoading8 = new Loading8(); 
