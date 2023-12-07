@@ -2,7 +2,7 @@
 /*
  * Copyright (C) 2k23, BaphomeT-T
  * (JavaGenius), pdavila0113@gmail.com
- * Version 1.0
+ * Version 3.0
  */public class Loading3 {
     /**
      * Displays a loading bar animation in the console using a specified character.
