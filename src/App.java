@@ -760,7 +760,7 @@ public class App {
                     oConteoProgresivo.conteoProgresivoHasta(m, 1);
 
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
-                    System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
+                    System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------");
                     System.out.println("");
                     System.out.println("crear un metodo recursivo para obtener la conteoRegresivo(n)  hasta 0 / imprimir el avance");
                     ConteoRegresivo oConteoRegresivo = new ConteoRegresivo();
