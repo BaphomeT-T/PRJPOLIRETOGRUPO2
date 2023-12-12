@@ -8,11 +8,13 @@ public class Loading7 {
      * Muestra el loanding7 
      * @throws InterruptedException
      */
+
     public void imprimirLoading7() throws InterruptedException{
         int progress = 0;
 int total = 20;
 char[] rotator = {'/', '-', '\\', '|'};
 int index = 0;
+
 
 while (progress < total) {
     String bar = "[";
