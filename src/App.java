@@ -635,7 +635,8 @@ public class App {
                   System.out.println("Arrays 3: Dibujar un plano de coordenadas positivo y graficar f(x) = 2x usando como caracteres las letras de su nombre ");
                   System.out.println("");
                   Arrays3 oArrays3 = new Arrays3();
-                  oArrays3.showArrays3(nombresCompletos[0]);System.out.println("");
+                  oArrays3.showArrays3(nombresCompletos[0]);
+                  System.out.println("");
                   System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                   System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                   System.out.println("");
@@ -650,7 +651,7 @@ public class App {
                           "        En el caso que conincidan las posiciones poner un *. \r\n" + //
                           "        Para visulizar el proceso usar un delay ");
                   Array5 oArray5 = new Array5(); 
-                  oArray5.ShowArray5For(nombresCompletos[0]);
+                  oArray5.ShowArray5For(nombresCompletos[0]+nombresCompletos[1]+nombresCompletos[2]+nombresCompletos[3]);
                   System.out.println("");
                   
                     break;
