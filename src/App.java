@@ -700,16 +700,16 @@ public class App {
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                     System.out.println("");
                     System.out.println("Loading 6: Crear una barra es de 20 caracteres, la barra <=> se desplaza de izquierda a derecha");
-                   // Loading6 oLoading6 = new Loading6(); 
-                   // oLoading6.imprimirLoading6();
+                    Loading6 oLoading6 = new Loading6(); 
+                    oLoading6.imprimirLoading6();
 
                     System.out.println("");
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                     System.out.println("");
                     System.out.println("Loading 7: Crear una barra es de 20 caracteres, la barra avanza cambiando la punta con movimiento rotacional signos \\|/-|");
-                    //Loading7 oLoading7 = new Loading7(); 
-                   // oLoading7.imprimirLoading7();
+                    Loading7 oLoading7 = new Loading7(); 
+                    oLoading7.imprimirLoading7();
                     System.out.println("");
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
