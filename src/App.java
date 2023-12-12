@@ -746,8 +746,15 @@ public class App {
                     System.out.println("");
                     System.out.println("crear un metodo recursivo para obtener factorial(n)  ");
                     CalcularFactorial oCalcularFactorial = new CalcularFactorial();
-                    System.out.print("Ingrese un número para calcular el factorial: ");
-                    int n = Integer.parseInt(sc.nextLine());
+                    int n;
+                    do {
+                        System.out.print("Ingrese un número para calcular el factorial: ");
+                        n = scanner.nextInt();
+                        if (n <= 0) {
+                          System.out.println("Por favor, ingrese un número positivo.");
+                        }
+                    } while (n <= 0);
+
                     long resultado = oCalcularFactorial.calcularFactorial(n);
                     System.out.println("El factorial de " + n + " es: " + resultado);
 
@@ -756,22 +763,23 @@ public class App {
                     System.out.println("");
                     System.out.println("crear un metodo recursivo para obtener la suma(a,b)");
                     SumaRecursiva oSumaRecursiva = new SumaRecursiva();
+                    int a, b;
                     System.out.print("Ingrese el valor de a: ");
-                    int a = Integer.parseInt(sc.nextLine());
+                    a = validarNumeroPositivo(scanner);
                     System.out.print("Ingrese el valor de b: ");
-                    int b = Integer.parseInt(sc.nextLine());
+                    b = validarNumeroPositivo(scanner);
                     int resultadoSuma = oSumaRecursiva.obtenerSuma(a, b);
                     System.out.println("La suma de " + a + " y " + b + " es: " + resultadoSuma);
-
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                     System.out.println("");
                     System.out.println("crear un metodo recursivo para obtener la multiplicacion(c,d)");
                     MultiplicacionRecursiva oMultiplicacionRecursiva = new MultiplicacionRecursiva();
+                    int c, d;
                     System.out.print("Ingrese el valor de c: ");
-                    int c = Integer.parseInt(sc.nextLine());
+                    c = validarNumeroPositivo(scanner);
                     System.out.print("Ingrese el valor de d: ");
-                    int d = Integer.parseInt(sc.nextLine());
+                    d = validarNumeroPositivo(scanner);
                     int resultadoMultiplicacion = oMultiplicacionRecursiva.realizarMultiplicacion(c, d);
                     System.out.println("La multiplicación de " + c + " y " + d + " es: " + resultadoMultiplicacion);
 
@@ -780,20 +788,21 @@ public class App {
                     System.out.println("");
                     System.out.println("crear un metodo recursivo para obtener la potencia(e,f)");
                     PotenciaRecursiva oPotenciaRecursiva = new PotenciaRecursiva();
+                    int e, f;
                     System.out.print("Ingrese el valor de la base (e): ");
-                    int e = Integer.parseInt(sc.nextLine());
+                    e = validarNumeroPositivo(scanner);
                     System.out.print("Ingrese el valor del exponente (f): ");
-                    int f = Integer.parseInt(sc.nextLine());
+                    f = validarNumeroPositivo(scanner);
                     int resultadoPotencia = oPotenciaRecursiva.calcularPotencia(e, f);
                     System.out.println(e + " elevado a la " + f + " es: " + resultadoPotencia);
-
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                     System.out.println("");
                     System.out.println("crear un metodo recursivo para obtener la conteoProgregresivoHasta(n) / imprimir el avance");
                     ConteoProgresivo oConteoProgresivo = new ConteoProgresivo();
+                    int m;
                     System.out.print("Ingrese el valor de m para el conteo progresivo: ");
-                    int m = Integer.parseInt(sc.nextLine());
+                    m = validarNumeroPositivo(scanner);
                     System.out.println("Comenzando el conteo progresivo:");
                     oConteoProgresivo.conteoProgresivoHasta(m, 1);
 
@@ -802,11 +811,11 @@ public class App {
                     System.out.println("");
                     System.out.println("crear un metodo recursivo para obtener la conteoRegresivo(n)  hasta 0 / imprimir el avance");
                     ConteoRegresivo oConteoRegresivo = new ConteoRegresivo();
+                    int x;
                     System.out.print("Ingrese el valor de x para el conteo regresivo: ");
-                    int x = Integer.parseInt(sc.nextLine());
+                    x = validarNumeroPositivo(scanner);
                     System.out.println("Comenzando el conteo regresivo:");
                     oConteoRegresivo.conteoRegresivoDesde(x);
-                    
                     break;
             
                 default:
@@ -823,5 +832,17 @@ public class App {
         
         System.out.println(" ");
         
+    }
+
+    private static int validarNumeroPositivo(Scanner scanner) {
+        int numero;
+        do {
+            System.out.print(" ");
+            numero = scanner.nextInt();
+            if (numero <= 0) {
+                System.out.println("Por favor, ingrese un numero positivo.");
+            }
+        } while (numero <= 0);
+        return numero;
     }
 }
