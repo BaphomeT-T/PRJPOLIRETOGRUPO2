@@ -4,35 +4,26 @@
  * Version 1.0
  */
 public class Loading6 {
-    public void imprimirLoading6(){
-        int longitudBarra = 20;
+    public void imprimirLoading6() throws InterruptedException{
         int porcentaje = 0;
-
         while (porcentaje <= 100) {
-            try {
-
-                // Calcula el número de caracteres ocupados por la barra según el porcentaje
-                int caracteresOcupados = (int) Math.ceil((longitudBarra * porcentaje) / 100.0);
-
-                // Dibuja la barra de progreso
-                System.out.print("[");
-                for (int i = 0; i < longitudBarra; i++) {
-                    if (i < caracteresOcupados) {
-                        System.out.print("=");
-                    } else {
-                        System.out.print(" ");
-                    }
-                }
-                System.out.print("] " + porcentaje + "%");
-
-                // Incrementa el porcentaje
-                porcentaje++;
-
-                // Duerme el hilo durante 100 milisegundos (ajusta según sea necesario)
-                Thread.sleep(100);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            String barra = "                    ";
+            if (porcentaje == 100) {
+                barra = "                 <=>";
+            }else if(porcentaje <=15)
+            {
+                barra = "<=>                 ";
+            } 
+            else {
+                int posicion = (porcentaje / 5) - 3;
+                barra = barra.substring(0, posicion) + "<=>" + barra.substring(posicion + 3);
             }
+            System.out.print("\r" + "[" + barra + "]" + " " + porcentaje + "%");
+            Thread.sleep(100);
+            porcentaje += 5;
         }
+        System.out.println("\nCarga completada");
+        
     }
-    }
+    
+}
