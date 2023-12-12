@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2k23, BaphomeT-T
- * (...), pdavila0113@gmail.com
+ * (JavaGenius), pdavila0113@gmail.com
  * Version 3.0
  */
 
