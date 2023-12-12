@@ -7,6 +7,9 @@ public class Loading7 {
     /**
      * Muestra el loanding7 
      */
+   /**
+     * Muestra el loanding7 
+     */
     public void imprimirLoading7(){
         int longitudBarra = 20;
         int porcentaje = 0;
