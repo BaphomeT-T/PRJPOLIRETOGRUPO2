@@ -746,15 +746,8 @@ public class App {
                     System.out.println("");
                     System.out.println("crear un metodo recursivo para obtener factorial(n)  ");
                     CalcularFactorial oCalcularFactorial = new CalcularFactorial();
-                    int n;
-                    do {
-                        System.out.print("Ingrese un número para calcular el factorial: ");
-                        n = sc.nextInt();
-                        if (n <= 0) {
-                          System.out.println("Por favor, ingrese un número positivo.");
-                        }
-                    } while (n <= 0);
-
+                    System.out.print("Ingrese un número para calcular el factorial: ");
+                    int n = Integer.parseInt(sc.nextLine());
                     long resultado = oCalcularFactorial.calcularFactorial(n);
                     System.out.println("El factorial de " + n + " es: " + resultado);
 
@@ -763,23 +756,22 @@ public class App {
                     System.out.println("");
                     System.out.println("crear un metodo recursivo para obtener la suma(a,b)");
                     SumaRecursiva oSumaRecursiva = new SumaRecursiva();
-                    int a, b;
                     System.out.print("Ingrese el valor de a: ");
-                    a = validarNumeroPositivo(sc);
+                    int a = Integer.parseInt(sc.nextLine());
                     System.out.print("Ingrese el valor de b: ");
-                    b = validarNumeroPositivo(sc);
+                    int b = Integer.parseInt(sc.nextLine());
                     int resultadoSuma = oSumaRecursiva.obtenerSuma(a, b);
                     System.out.println("La suma de " + a + " y " + b + " es: " + resultadoSuma);
+
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                     System.out.println("");
                     System.out.println("crear un metodo recursivo para obtener la multiplicacion(c,d)");
                     MultiplicacionRecursiva oMultiplicacionRecursiva = new MultiplicacionRecursiva();
-                    int c, d;
                     System.out.print("Ingrese el valor de c: ");
-                    c = validarNumeroPositivo(sc);
+                    int c = Integer.parseInt(sc.nextLine());
                     System.out.print("Ingrese el valor de d: ");
-                    d = validarNumeroPositivo(sc);
+                    int d = Integer.parseInt(sc.nextLine());
                     int resultadoMultiplicacion = oMultiplicacionRecursiva.realizarMultiplicacion(c, d);
                     System.out.println("La multiplicación de " + c + " y " + d + " es: " + resultadoMultiplicacion);
 
@@ -788,21 +780,20 @@ public class App {
                     System.out.println("");
                     System.out.println("crear un metodo recursivo para obtener la potencia(e,f)");
                     PotenciaRecursiva oPotenciaRecursiva = new PotenciaRecursiva();
-                    int e, f;
                     System.out.print("Ingrese el valor de la base (e): ");
-                    e = validarNumeroPositivo(sc);
+                    int e = Integer.parseInt(sc.nextLine());
                     System.out.print("Ingrese el valor del exponente (f): ");
-                    f = validarNumeroPositivo(sc);
+                    int f = Integer.parseInt(sc.nextLine());
                     int resultadoPotencia = oPotenciaRecursiva.calcularPotencia(e, f);
                     System.out.println(e + " elevado a la " + f + " es: " + resultadoPotencia);
+
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
                     System.out.println("");
                     System.out.println("crear un metodo recursivo para obtener la conteoProgregresivoHasta(n) / imprimir el avance");
                     ConteoProgresivo oConteoProgresivo = new ConteoProgresivo();
-                    int m;
                     System.out.print("Ingrese el valor de m para el conteo progresivo: ");
-                    m = validarNumeroPositivo(sc);
+                    int m = Integer.parseInt(sc.nextLine());
                     System.out.println("Comenzando el conteo progresivo:");
                     oConteoProgresivo.conteoProgresivoHasta(m, 1);
 
@@ -811,11 +802,11 @@ public class App {
                     System.out.println("");
                     System.out.println("crear un metodo recursivo para obtener la conteoRegresivo(n)  hasta 0 / imprimir el avance");
                     ConteoRegresivo oConteoRegresivo = new ConteoRegresivo();
-                    int x;
                     System.out.print("Ingrese el valor de x para el conteo regresivo: ");
-                    x = validarNumeroPositivo(sc);
+                    int x = Integer.parseInt(sc.nextLine());
                     System.out.println("Comenzando el conteo regresivo:");
                     oConteoRegresivo.conteoRegresivoDesde(x);
+                    
                     break;
             
                 default:
@@ -832,17 +823,5 @@ public class App {
         
         System.out.println(" ");
         
-    }
-
-    private static int validarNumeroPositivo(Scanner sc) {
-        int numero;
-        do {
-            System.out.print(" ");
-            numero = Integer.parseInt(sc.nextLine());
-            if (numero <= 0) {
-                System.out.println("Por favor, ingrese un numero positivo.");
-            }
-        } while (numero <= 0);
-        return numero;
     }
 }
