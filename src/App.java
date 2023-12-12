@@ -749,7 +749,7 @@ public class App {
                     int n;
                     do {
                         System.out.print("Ingrese un número para calcular el factorial: ");
-                        n = scanner.nextInt();
+                        n = sc.nextInt();
                         if (n <= 0) {
                           System.out.println("Por favor, ingrese un número positivo.");
                         }
@@ -765,9 +765,9 @@ public class App {
                     SumaRecursiva oSumaRecursiva = new SumaRecursiva();
                     int a, b;
                     System.out.print("Ingrese el valor de a: ");
-                    a = validarNumeroPositivo(scanner);
+                    a = validarNumeroPositivo(sc);
                     System.out.print("Ingrese el valor de b: ");
-                    b = validarNumeroPositivo(scanner);
+                    b = validarNumeroPositivo(sc);
                     int resultadoSuma = oSumaRecursiva.obtenerSuma(a, b);
                     System.out.println("La suma de " + a + " y " + b + " es: " + resultadoSuma);
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
@@ -777,9 +777,9 @@ public class App {
                     MultiplicacionRecursiva oMultiplicacionRecursiva = new MultiplicacionRecursiva();
                     int c, d;
                     System.out.print("Ingrese el valor de c: ");
-                    c = validarNumeroPositivo(scanner);
+                    c = validarNumeroPositivo(sc);
                     System.out.print("Ingrese el valor de d: ");
-                    d = validarNumeroPositivo(scanner);
+                    d = validarNumeroPositivo(sc);
                     int resultadoMultiplicacion = oMultiplicacionRecursiva.realizarMultiplicacion(c, d);
                     System.out.println("La multiplicación de " + c + " y " + d + " es: " + resultadoMultiplicacion);
 
@@ -790,9 +790,9 @@ public class App {
                     PotenciaRecursiva oPotenciaRecursiva = new PotenciaRecursiva();
                     int e, f;
                     System.out.print("Ingrese el valor de la base (e): ");
-                    e = validarNumeroPositivo(scanner);
+                    e = validarNumeroPositivo(sc);
                     System.out.print("Ingrese el valor del exponente (f): ");
-                    f = validarNumeroPositivo(scanner);
+                    f = validarNumeroPositivo(sc);
                     int resultadoPotencia = oPotenciaRecursiva.calcularPotencia(e, f);
                     System.out.println(e + " elevado a la " + f + " es: " + resultadoPotencia);
                     System.out.println("-------------------------------------------------------------------------------------------------------------------------------------------");
@@ -802,7 +802,7 @@ public class App {
                     ConteoProgresivo oConteoProgresivo = new ConteoProgresivo();
                     int m;
                     System.out.print("Ingrese el valor de m para el conteo progresivo: ");
-                    m = validarNumeroPositivo(scanner);
+                    m = validarNumeroPositivo(sc);
                     System.out.println("Comenzando el conteo progresivo:");
                     oConteoProgresivo.conteoProgresivoHasta(m, 1);
 
@@ -813,7 +813,7 @@ public class App {
                     ConteoRegresivo oConteoRegresivo = new ConteoRegresivo();
                     int x;
                     System.out.print("Ingrese el valor de x para el conteo regresivo: ");
-                    x = validarNumeroPositivo(scanner);
+                    x = validarNumeroPositivo(sc);
                     System.out.println("Comenzando el conteo regresivo:");
                     oConteoRegresivo.conteoRegresivoDesde(x);
                     break;
@@ -834,11 +834,11 @@ public class App {
         
     }
 
-    private static int validarNumeroPositivo(Scanner scanner) {
+    private static int validarNumeroPositivo(Scanner sc) {
         int numero;
         do {
             System.out.print(" ");
-            numero = scanner.nextInt();
+            numero = Integer.parseInt(sc.nextLine());
             if (numero <= 0) {
                 System.out.println("Por favor, ingrese un numero positivo.");
             }
